@@ -42,30 +42,30 @@ Y_test_df <- fread("./y_test.txt")
 subject_test_df <- fread("./subject_test.txt")
 
 # Explore the data
-dim(X_test_df)        #2947 obs x 561 var
-dim(Y_test_df)        #2947 obs x 1 var
-summary(Y_test_df)   #min 1, max 6
-dim(subject_test_df)  #2947 obs x 1 var
-summary(subject_test_df) #min 2, max 24
+#dim(X_test_df)        #2947 obs x 561 var
+#dim(Y_test_df)        #2947 obs x 1 var
+#summary(Y_test_df)   #min 1, max 6
+#dim(subject_test_df)  #2947 obs x 1 var
+#summary(subject_test_df) #min 2, max 24
 
 # Now read in the data in the train folder.
-setwd("C:/Users/Jenny/Documents/COURSERA/2 - Getting and cleaning data (Sep 2016)/Week 4")
+#setwd("C:/Users/Jenny/Documents/COURSERA/2 - Getting and cleaning data (Sep 2016)/Week 4")
 setwd("./UCI HAR Dataset/train")
 X_train_df <- fread("./X_train.txt")
 Y_train_df <- fread("./y_train.txt")
 subject_train_df <- fread("./subject_train.txt")
 
 #Explore a bit
-dim(X_train_df)       #7352 obs x 561 var
-dim(Y_train_df)       #7352 obs x 1 var
-summary(Y_train_df)   #min 1, max 6
-dim(subject_train_df) #7352 obs x 1 var
-summary(subject_train_df) #min 1, max 30
+#dim(X_train_df)       #7352 obs x 561 var
+#dim(Y_train_df)       #7352 obs x 1 var
+#summary(Y_train_df)   #min 1, max 6
+#dim(subject_train_df) #7352 obs x 1 var
+#summary(subject_train_df) #min 1, max 30
 
 # According to the documentation, features.txt contains the feature names. Read this file in, explore.
 setwd("..")
 features_df <- fread("./features.txt")
-dim(features_df)      #561 obs x 2 var
+#dim(features_df)      #561 obs x 2 var
 
 # Activity labels are contained in a file as well. Read this in.
 activity <- fread("./activity_labels.txt")
