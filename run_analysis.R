@@ -20,11 +20,11 @@ data_zip <- download.file(fileURL, destfile = "./data_zip.zip")
 unzip("data_zip.zip")
 
 # Check the directory
-list.files()
+# list.files()
 
 # Change into the new folder, "UCI HAR Dataset", and check what is inside
 setwd("./UCI HAR Dataset")
-list.files()
+# list.files()
 
 # According to the README.txt and features_info.txt files, data was collected for 30 people, and these were split between
 # "train" and "test" sets, in separate folders labelled as such. Within each folder is the following:
@@ -36,7 +36,7 @@ list.files()
 # Start reading in the data from the two folders. Start with the test folder because it's smaller.
 library(data.table)
 setwd("./test")
-list.files()
+#list.files()
 X_test_df <- fread("./X_test.txt")
 Y_test_df <- fread("./y_test.txt")
 subject_test_df <- fread("./subject_test.txt")
